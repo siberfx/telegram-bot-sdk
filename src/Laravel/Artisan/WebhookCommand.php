@@ -168,7 +168,7 @@ class WebhookCommand extends Command
         return $value ? 'Yes' : 'No';
     }
 
-    private function resolveTelegramBot(string|null $bot): void
+    private function resolveTelegramBot(?string $bot): void
     {
         try {
             $this->telegram = $this->botsManager->bot($bot);

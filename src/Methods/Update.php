@@ -143,7 +143,7 @@ trait Update
      *
      * @see setWebhook
      */
-    public function getWebhookUpdate(bool $shouldDispatchEvents = true, ?RequestInterface $request = null): UpdateObject
+    public function getWebhookUpdate(bool $shouldDispatchEvents = true, RequestInterface $request = null): UpdateObject
     {
         $body = $this->getRequestBody($request);
 
